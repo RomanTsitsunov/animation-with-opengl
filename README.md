@@ -1,13 +1,12 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-# Animation-with-moving-balls
-![gif2](https://github.com/RomanTsitsunov/Animation-with-moving-balls/gif)
+# Animation-with-opengl
+![gif2](https://github.com/RomanTsitsunov/animation-with-opengl/blob/main/g.gif)
 ### Общее описание
 <div>
 Программа отображает окружность, плавно перетекающую в ромб, и наоборот;
 цвет периодически изменяется.<br>
 </div>
-<hr>
 
 #### display
 Функция display отрисовывает окружность с заданными
@@ -23,4 +22,7 @@
    ```
    git clone https://github.com/RomanTsitsunov/animation-with-opengl.git
    ```
-2. Запустите приложение по пути animation-with-opengl\lab5 opengl\x64\Release\lab5 opengl
+2. Запустите приложение по пути
+   ```
+   animation-with-opengl\lab5 opengl\x64\Release\lab5 opengl
+   ```
