@@ -1,0 +1,21 @@
+name: GitHub Actions
+
+on:
+  push:
+    branches:
+      - main
+jobs:
+  build:
+    runs-on: self-hosted
+
+    steps:
+      - uses: actions/checkout@v4
+
+  test:
+    needs: build
+    runs-on: self-hosted
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: Compiling test
+        run: 'lab5_opengl\x64\Release\Sample-Test.exe'

@@ -1,0 +1,1 @@
+E:\Флешка\7-8 семестр\Компьютерная графика\lab_5\animation-with-opengl\lab5 opengl\Sample-Test\x64\Release\Sample-Test.vcxproj.CopyComplete

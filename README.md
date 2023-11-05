@@ -24,5 +24,5 @@
    ```
 2. Запустите приложение по пути
    ```
-   animation-with-opengl\lab5 opengl\x64\Release\lab5 opengl
+   "animation-with-opengl\lab5 opengl\x64\Release\lab5 opengl"
    ```
