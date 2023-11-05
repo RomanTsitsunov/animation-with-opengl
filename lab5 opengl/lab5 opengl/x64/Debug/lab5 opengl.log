@@ -1,7 +1,7 @@
 ﻿  lab5 opengl.cpp
-E:\Флешка\7-8 семестр\Компьютерная графика\lab_5\animation-with-opengl\lab5 opengl\lab5 opengl\lab5 opengl.cpp(15,28): warning C4305: аргумент: усечение из "double" в "GLclampf"
-E:\Флешка\7-8 семестр\Компьютерная графика\lab_5\animation-with-opengl\lab5 opengl\lab5 opengl\lab5 opengl.cpp(15,23): warning C4305: аргумент: усечение из "double" в "GLclampf"
-E:\Флешка\7-8 семестр\Компьютерная графика\lab_5\animation-with-opengl\lab5 opengl\lab5 opengl\lab5 opengl.cpp(23,28): warning C4244: аргумент: преобразование "double" в "GLubyte", возможна потеря данных
-E:\Флешка\7-8 семестр\Компьютерная графика\lab_5\animation-with-opengl\lab5 opengl\lab5 opengl\lab5 opengl.cpp(23,21): warning C4244: аргумент: преобразование "double" в "GLubyte", возможна потеря данных
-E:\Флешка\7-8 семестр\Компьютерная графика\lab_5\animation-with-opengl\lab5 opengl\lab5 opengl\lab5 opengl.cpp(23,16): warning C4244: аргумент: преобразование "double" в "GLubyte", возможна потеря данных
+E:\Флешка\7-8 семестр\Компьютерная графика\lab_5\animation-with-opengl\lab5 opengl\lab5 opengl\lab5 opengl.cpp(19,28): warning C4305: аргумент: усечение из "double" в "GLclampf"
+E:\Флешка\7-8 семестр\Компьютерная графика\lab_5\animation-with-opengl\lab5 opengl\lab5 opengl\lab5 opengl.cpp(19,23): warning C4305: аргумент: усечение из "double" в "GLclampf"
+E:\Флешка\7-8 семестр\Компьютерная графика\lab_5\animation-with-opengl\lab5 opengl\lab5 opengl\lab5 opengl.cpp(26,28): warning C4244: аргумент: преобразование "double" в "GLubyte", возможна потеря данных
+E:\Флешка\7-8 семестр\Компьютерная графика\lab_5\animation-with-opengl\lab5 opengl\lab5 opengl\lab5 opengl.cpp(26,21): warning C4244: аргумент: преобразование "double" в "GLubyte", возможна потеря данных
+E:\Флешка\7-8 семестр\Компьютерная графика\lab_5\animation-with-opengl\lab5 opengl\lab5 opengl\lab5 opengl.cpp(26,16): warning C4244: аргумент: преобразование "double" в "GLubyte", возможна потеря данных
   lab5 opengl.vcxproj -> E:\Флешка\7-8 семестр\Компьютерная графика\lab_5\animation-with-opengl\lab5 opengl\x64\Debug\lab5 opengl.exe
