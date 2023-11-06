@@ -1,5 +1,5 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-
+[![GitHub Actions](https://github.com/RomanTsitsunov/animation-with-opengl/actions/workflows/workflow.yml/badge.svg)](https://github.com/RomanTsitsunov/animation-with-opengl/actions/workflows/workflow.yml)
 # Animation-with-opengl
 ![gif2](https://github.com/RomanTsitsunov/animation-with-opengl/blob/main/g.gif)
 ### Общее описание
