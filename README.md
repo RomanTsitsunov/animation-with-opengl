@@ -1,7 +1,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![GitHub Actions](https://github.com/RomanTsitsunov/animation-with-opengl/actions/workflows/workflow.yml/badge.svg)](https://github.com/RomanTsitsunov/animation-with-opengl/actions/workflows/workflow.yml)
 # Animation-with-opengl
-![gif2](https://github.com/RomanTsitsunov/animation-with-opengl/blob/main/g.gif)
+![gif2](https://github.com/RomanTsitsunov/animation-with-opengl/blob/main/data/g.gif)
 ### Общее описание
 <div>
 Программа отображает окружность, плавно перетекающую в ромб, и наоборот;
@@ -22,7 +22,25 @@
    ```
    git clone https://github.com/RomanTsitsunov/animation-with-opengl.git
    ```
-2. Запустите приложение по пути
+2. Установите cmake через vcpkg
    ```
-   "animation-with-opengl\lab5 opengl\x64\Release\lab5 opengl"
+        git clone https://github.com/Microsoft/vcpkg.git
+        cd vcpkg
+        git checkout --force 2020.01
+        ./bootstrap-vcpkg.bat
+        ./vcpkg.exe install cppzmq:x64-windows
    ```
+3. Запустите cmake
+   ```
+	cd ..
+	cd lab5_opengl
+        mkdir build
+        cd build
+        cmake .. -DCMAKE_TOOLCHAIN_FILE={Путь к проекту}
+                  /../vcpkg/scripts/buildsystems/vcpkg.cmake
+   ```
+4. Забилдить проект
+   """
+	cd {Путь к проекту}/lab5_opengl
+        cmake --build build
+   """
