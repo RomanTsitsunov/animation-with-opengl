@@ -9,7 +9,30 @@ jobs:
     runs-on: self-hosted
 
     steps:
-      - uses: actions/checkout@v4
+    - name: Checkout
+      uses: actions/checkout@v4
+
+    - name: Installing vcpkg (windows)
+      run: |
+        git clone https://github.com/Microsoft/vcpkg.git
+        cd vcpkg
+        git checkout --force 2020.01
+        ./bootstrap-vcpkg.bat
+        ./vcpkg.exe install cppzmq:x64-windows
+
+    - name: Running cmake (windows)
+      run: |
+	cd ..
+	cd lab5_opengl
+        mkdir build
+        cd build
+        cmake .. -DCMAKE_TOOLCHAIN_FILE=${{ github.workspace }}
+                  /../vcpkg/scripts/buildsystems/vcpkg.cmake
+
+    - name: Build Solution (windows)
+      run: |
+        cd ${{ github.workspace }}/lab5_opengl
+        cmake --build build
 
   test:
     needs: build
