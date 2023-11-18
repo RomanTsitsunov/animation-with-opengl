@@ -22,20 +22,36 @@
 2. Установите cmake через vcpkg
    ```
    git clone https://github.com/Microsoft/vcpkg.git
+   ```
+   ```
    cd vcpkg
+   ```
+   ```
    ./bootstrap-vcpkg.bat
+   ```
+   ```
    ./vcpkg.exe install cppzmq:x64-windows
    ```
 3. Запустите cmake
    ```
    cd ..
+   ```
+   ```
    cd animation-with-opengl/lab5_opengl
+   ```
+   ```
    mkdir build
+   ```
+   ```
    cd build
+   ```
+   ```
    cmake .. -DCMAKE_TOOLCHAIN_FILE={Путь к проекту}/vcpkg/scripts/buildsystems/vcpkg.cmake
    ```
 4. Собрать проект
    ```
    cd ..
+   ```
+   ```
    cmake --build build --config Release
    ```
