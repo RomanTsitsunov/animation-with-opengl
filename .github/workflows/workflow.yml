@@ -15,13 +15,9 @@ jobs:
     - name: Installing vcpkg (windows)
       run: |
         git clone https://github.com/Microsoft/vcpkg.git
-        echo 1
         cd vcpkg
-        echo 2
         ./bootstrap-vcpkg.bat
-        echo 3
         ./vcpkg.exe install cppzmq:x64-windows
-        echo 4
 
     - name: Running cmake (windows)
       run: |
