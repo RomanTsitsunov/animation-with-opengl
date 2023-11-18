@@ -4,40 +4,38 @@
 ![gif2](https://github.com/RomanTsitsunov/animation-with-opengl/blob/main/data/g.gif)
 ### Общее описание
 <div>
-Программа отображает окружность, плавно перетекающую в ромб, и наоборот;
+Программа отображает анимацию, в которой окружность плавно перетекает в ромб, и наоборот;
 цвет периодически изменяется.<br>
 </div>
 
-#### display
-Функция display отрисовывает окружность с заданными
-радиусом, центром и количеством разбиений.
-#### Redraw
-Функция Redraw изменяет параметры отрисовки, так чтобы фигура
-последовательно преобразовывалась от окружности к ромбу и обратно
-с периодическим изменением цвета.
-#### Main
-Сначала создается начальное окно с заданными размерами и названием, после чего запускается цикл по отрисовке изображения.
-#### Установка и запуск
+### Используемые библиотеки
+- Vcpkg - пакетный менеджер, использовался для установки всех необходимых библиотек;
+- CMake - программное средство автоматизации сборки программного обеспечения;
+- Freedlut - позволяет пользователю создавать окна, предоставляющие контекст OpenGL на широком спектре платформ;
+- Google Test - библиотека для модульного тестирования на языке C++.
+
+### Установка и запуск
 1. Клонируйте репозиторий или скачайте исходный код
    ```
    git clone https://github.com/RomanTsitsunov/animation-with-opengl.git
    ```
 2. Установите cmake через vcpkg
    ```
-        git clone https://github.com/Microsoft/vcpkg.git
-        cd vcpkg
-        ./bootstrap-vcpkg.bat
-        ./vcpkg.exe install cppzmq:x64-windows
+   git clone https://github.com/Microsoft/vcpkg.git
+   cd vcpkg
+   ./bootstrap-vcpkg.bat
+   ./vcpkg.exe install cppzmq:x64-windows
    ```
 3. Запустите cmake
    ```
-	cd lab5_opengl
-        mkdir build
-        cd build
-        cmake .. -DCMAKE_TOOLCHAIN_FILE={Путь к проекту}/vcpkg/scripts/buildsystems/vcpkg.cmake
+   cd ..
+   cd animation-with-opengl/lab5_opengl
+   mkdir build
+   cd build
+   cmake .. -DCMAKE_TOOLCHAIN_FILE={Путь к проекту}/vcpkg/scripts/buildsystems/vcpkg.cmake
    ```
 4. Собрать проект
    ```
-	cd lab5_opengl
-        cmake --build build
+   cd ..
+   cmake --build build --config Release
    ```
