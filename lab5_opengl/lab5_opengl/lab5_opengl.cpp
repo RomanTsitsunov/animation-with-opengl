@@ -136,6 +136,7 @@ void redraw()
 
 int main(int argc, char** argv) {
     glutInit(&argc, argv);
+    glutInitWindowSize(900, 900);
     glutCreateWindow("OpenGL");
     glutDisplayFunc(display);
     glutIdleFunc(redraw);
